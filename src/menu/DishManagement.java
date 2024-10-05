@@ -22,6 +22,7 @@ public class DishManagement {
                            (bolognese.kcal()+ chickenWings.kcal()+ cheeseCake.kcal()));
         System.out.println("\n");
 
+
         //FORMATTAZIONE CON CLASSE MENU
         Menu menu = new Menu(bolognese,chickenWings,cheeseCake);
         System.out.println(menu.toString());
