@@ -14,9 +14,9 @@ public class Car {
     public int currentYear = 2024;
 
 
-    public float getValue(int boughtOn, int currentYear, float price){
+    public float getValue(){
 
-        this.price = price;
+        price = price;
         int carAgeForOwner;
         carAgeForOwner = currentYear-boughtOn;
         float c = price;
@@ -30,12 +30,12 @@ public class Car {
         return price;
     }
 
-    public int getAge(int releasedOn, int currentYear){
+    public int getAge(){
         int carAge = currentYear - releasedOn;
         return carAge;
     }
 
-    public boolean isDead(int km){
+    public boolean isDead(){
         boolean isDead;
         if (km>200000 || km>100000 && carName.equalsIgnoreCase("smart")){
             return isDead=true;
@@ -49,8 +49,8 @@ public class Car {
         return "La tua "+carName+" a motore "+engine+", con "+seats+" posti."+" Con targa: "
                 +licensePlate+", immatricolata nel "+releasedOn+" e comprata da te nel "
                 +boughtOn+" a "+price+"$"+". \nHa attualmente "
-                +km+"km. Oggi ha un valore complessivo di $"+getValue(boughtOn, currentYear, price)+"."+
-                " Il motore e'"+(isDead(km) ? "morto." : "vivo.");
+                +km+"km. Oggi ha un valore complessivo di $"+getValue()+"."+
+                " Il motore e'"+(isDead() ? "morto." : "vivo.");
     }
 
 }

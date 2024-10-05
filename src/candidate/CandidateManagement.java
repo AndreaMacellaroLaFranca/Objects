@@ -5,17 +5,17 @@ public class CandidateManagement {
 
         
         Candidate primoCandidato = new Candidate("Franco", "master", "como", true, 35, 0);
-        Candidate secondoCandidato = new Candidate("Roberto", "master", "Cagliari", false,35,2);
+        Candidate secondoCandidato = new Candidate("Roberto", "master", "Cagliari", false,22,2);
 
 
         System.out.println(primoCandidato.toString());
         System.out.println(secondoCandidato.toString());
 
-        if(!primoCandidato.hasMinimumTitle(primoCandidato.title) && !secondoCandidato.hasMinimumTitle(secondoCandidato.title)){
+        if(!primoCandidato.hasMinimumTitle() && !secondoCandidato.hasMinimumTitle()){
             System.out.println("Ci dispiace nessuno di voi è idoneo.");
-        }else if (primoCandidato.hasMinimumTitle(primoCandidato.title) && !secondoCandidato.hasMinimumTitle(secondoCandidato.title)){
+        }else if (primoCandidato.hasMinimumTitle() && !secondoCandidato.hasMinimumTitle()){
             System.out.println("Congratulazione "+primoCandidato.name+" hai passato la selezione!");
-        } else if (!primoCandidato.hasMinimumTitle(primoCandidato.title) && secondoCandidato.hasMinimumTitle(secondoCandidato.title)) {
+        } else if (!primoCandidato.hasMinimumTitle() && secondoCandidato.hasMinimumTitle()) {
             System.out.println("Congratulazione "+secondoCandidato.name+" hai passato la selezione!");
         }else {
             if (primoCandidato.score() > secondoCandidato.score()){
@@ -24,7 +24,6 @@ public class CandidateManagement {
                 System.out.println("Congratulazione "+secondoCandidato.name+" hai passato la selezione!");
             }
         }
-
 
     }
 }

@@ -16,7 +16,7 @@ public class Candidate {
         this.son = son;
     }
 
-    public boolean hasMinimumTitle(String title){
+    public boolean hasMinimumTitle(){
         boolean hasMinimumTitle;
         if (title.equalsIgnoreCase("diploma")||title.equalsIgnoreCase("laurea")||title.equalsIgnoreCase("master")){
             hasMinimumTitle=true;
