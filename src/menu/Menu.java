@@ -24,5 +24,4 @@ public class Menu {
         return String.format("%s: $%d %n%s: $%d %n%s: $%d %nPrezzo totale della cena: $%d %nCalorie totali del menu: %d",firstCourse.name,firstCourse.price,secondCourse.name,secondCourse.price,dessert.name,dessert.price,totalPrice(),totalKcal());
     }
 
-
 }
