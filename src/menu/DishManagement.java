@@ -20,7 +20,6 @@ public class DishManagement {
                            (bolognese.price+ chickenWings.price+ cheeseCake.price)+"\n"+
                            "Kcal totali del menu: "+
                            (bolognese.kcal()+ chickenWings.kcal()+ cheeseCake.kcal()));
-
         System.out.println("\n");
 
         //FORMATTAZIONE CON CLASSE MENU
