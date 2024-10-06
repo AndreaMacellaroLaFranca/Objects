@@ -31,7 +31,7 @@ public class ATM {
                 System.out.println(javaBank.toString()+"\n");
 
             } else if (action.equalsIgnoreCase("esci")){
-                System.out.println("Grazie per aver scelto Java getMainAction!");
+                System.out.println("Grazie per aver scelto Java Bank!");
             } else {
                 System.out.println("COMANDO NON RICONOSCIUTO \n");
             }
