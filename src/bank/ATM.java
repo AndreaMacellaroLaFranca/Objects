@@ -6,12 +6,12 @@ public class ATM {
     public static void main(String[] Args){
 
         Bank javaBank = new Bank();
-        Scanner sc = new Scanner(System.in);
+        Scanner console = new Scanner(System.in);
         String action;
 
             do {
                 System.out.print("Vuoi prelevare, depositare, o vedere il saldo (preleva-deposita-saldo-esci)?: ");
-                action = sc.nextLine();
+                action = console.nextLine();
 
                 if (action.equalsIgnoreCase("preleva")) {
                     javaBank.take();
@@ -26,6 +26,8 @@ public class ATM {
 
                 } else if (action.equalsIgnoreCase("esci")){
                     System.out.println("Grazie per aver scelto Java Bank!");
+                } else {
+                    System.out.println("COMANDO NON RICONOSCIUTO \n");
                 }
 
             } while (!action.equalsIgnoreCase("esci"));
