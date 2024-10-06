@@ -11,13 +11,11 @@ public class Menu {
     }
 
     public int totalKcal(){
-       int totalKcal = firstCourse.kcal()+secondCourse.kcal()+dessert.kcal();
-       return totalKcal;
+        return firstCourse.kcal()+secondCourse.kcal()+dessert.kcal();
     }
 
     public int totalPrice(){
-        int totalPrice = firstCourse.price+ secondCourse.price+dessert.price;
-        return totalPrice;
+        return firstCourse.price+secondCourse.price+dessert.price;
     }
 
     public String toString(){
