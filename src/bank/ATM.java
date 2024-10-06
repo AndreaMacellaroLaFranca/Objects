@@ -6,31 +6,37 @@ public class ATM {
     public static void main(String[] Args){
 
         Bank javaBank = new Bank();
+
+        getMainAction(javaBank);
+
+    }
+    public static void getMainAction(Bank javaBank){
+
         Scanner console = new Scanner(System.in);
         String action;
 
-            do {
-                System.out.print("Vuoi prelevare, depositare, o vedere il saldo (preleva-deposita-saldo-esci)?: ");
-                action = console.nextLine();
+        do {
+            System.out.print("Vuoi prelevare, depositare, o vedere il saldo (preleva-deposita-saldo-esci)?: ");
+            action = console.nextLine();
 
-                if (action.equalsIgnoreCase("preleva")) {
-                    javaBank.take();
-                    System.out.println("\n");
+            if (action.equalsIgnoreCase("preleva")) {
+                javaBank.take();
+                System.out.println("\n");
 
-                } else if (action.equalsIgnoreCase("deposita")) {
-                    javaBank.deposit();
-                    System.out.println("\n");
+            } else if (action.equalsIgnoreCase("deposita")) {
+                javaBank.deposit();
+                System.out.println("\n");
 
-                } else if (action.equalsIgnoreCase("saldo")) {
-                    System.out.println(javaBank.toString()+"\n");
+            } else if (action.equalsIgnoreCase("saldo")) {
+                System.out.println(javaBank.toString()+"\n");
 
-                } else if (action.equalsIgnoreCase("esci")){
-                    System.out.println("Grazie per aver scelto Java Bank!");
-                } else {
-                    System.out.println("COMANDO NON RICONOSCIUTO \n");
-                }
+            } else if (action.equalsIgnoreCase("esci")){
+                System.out.println("Grazie per aver scelto Java getMainAction!");
+            } else {
+                System.out.println("COMANDO NON RICONOSCIUTO \n");
+            }
 
-            } while (!action.equalsIgnoreCase("esci"));
+        } while (!action.equalsIgnoreCase("esci"));
 
     }
 }
