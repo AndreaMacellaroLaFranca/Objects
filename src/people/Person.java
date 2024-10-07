@@ -24,5 +24,4 @@ public class Person {
             return 2024 - yob;
         }
 
-
 }

@@ -4,6 +4,7 @@ public class PeopleManagement {
     public static void main (String[] Args){
 
         Person guy = new Person();
+
         guy.name = "Bob";
         guy.surname = "Smith";
         guy.city = "Portland";
@@ -25,9 +26,6 @@ public class PeopleManagement {
 
         String galPresentation = gal.toString();
         System.out.println(galPresentation);
-
-
-
 
     }
 }
