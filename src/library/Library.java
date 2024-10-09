@@ -4,6 +4,10 @@ public class Library {
 
     private LibraryItem[] catalog;
 
+    public LibraryItem[] getCatalog() {
+        return catalog;
+    }
+
     public void addItem (LibraryItem item){
         System.out.println("Library catalog: \n");
         for(int i = 0; i<catalog.length ;i++){
